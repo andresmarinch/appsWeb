@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<title>lab2-page3</title>
+		<meta></meta>
+		<script>
+		var canciones = [
+		"Navidad sin ti",
+		"Jugo de piña",
+		"La macarena",
+		"O me voy o te vas",
+		"Mas que tu amigo",
+		"Cuando te acuerdes de mi",
+		];
+		
+			function buscarCancion(nombre){
+				var cancion;
+				for (var i = 0; i < canciones.length; i++){
+						cancion = canciones[i];
+						if(canciones[i].indexOf(nombre) >= 0){
+						return cancion;
+						
+						}
+				}
+				return "cancion no encontrada";
+
+
+				 
+			}
+			var cancionEncontrada = buscarCancion("Jugo");
+			alert(cancionEncontrada);
+		</script>
+	</head>
+	<body>
+		<h1>Planeta verde</h1>
+		<p id="planetaverde">Todo Bien</p>
+		<h1>Planeta Rojo</h1>
+		<p id="planetarojo">Nada que reportar</p>
+		<h1>Planeta azul</h1>
+		<p id="planetaazul">Todos los sistemas funcionan bien</p>		
+	</body>
+	<footer>
+		<script>
+			
+			
+		</script>
+	</footer>
+</html>
+

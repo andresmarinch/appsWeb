@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<title>lab2-page2</title>
+		<meta charset="utf-8"></meta>
+		<style>
+		body{
+			font-family:Arial,Verdana, sans-serif;
+		}
+		</style>
+		<script>		
+		function creafrase(){
+			var palabra1 =["24/7","Multiplataforma","30,000 pies", "A-A","Windows"];
+			var palabra2 =["Poder","Valores","Oriente","Alinieado","Occidente"];
+			var palabra3 =["Procesos","Soluciones","Puntos","Estrategia","Vision"];
+			
+			var rand1 = Math.floor(Math.random() * palabra1.length);
+			var rand2 = Math.floor(Math.random() * palabra2.length);
+			var rand3 = Math.floor(Math.random() * palabra3.length);
+			
+			var frase = palabra1[rand1] + " " + palabra2[rand2]+ " " + palabra3[rand3];
+			
+		 
+			var elementoFrase = document.getElementById("frase");
+			elementoFrase.innerHTML = frase;
+		}
+		window.onload = creafrase;
+		</script>
+	</head>
+	<body>
+		<h1>Pedro Dice:</h1>
+		<p id="frase"></p>
+			
+	</body>
+	<footer>
+		
+	</footer>
+</html>
